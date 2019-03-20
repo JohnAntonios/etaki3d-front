@@ -1,3 +1,31 @@
 .nav-icon {
-	font-size: 2rem;
+	font-size: 1.8rem;
+}
+
+#settings-dropdown-icon {
+	cursor: pointer;
+}
+
+#footer-nav-container {
+	visibility: hidden;
+}
+
+/* Responsive media query for tablets and lower width devices */
+@media (max-width: 767px) { 
+	#footer-nav-container {
+		visibility: visible;
+	}
+
+	#footer-nav {
+		flex-direction: unset;
+	}
+
+	#user-name-placeholder, #top-nav-lg-links {
+		display: none;
+	}
+
+	#setting-dropdown-menu {
+		position: absolute;
+		float: left;
+	}
 }
